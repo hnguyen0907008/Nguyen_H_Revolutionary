@@ -1,0 +1,29 @@
+*{
+    .hidden{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        font-family: $text;
+
+        @include tablet{
+            font-size: 1.1em;
+        }
+
+        @include desktop{
+            font-size: 1.2em;
+        }
+
+        .home, .about, .events, .platform, .contact{
+            @include desktop{
+                width: 1000px;
+                margin: 0 auto;
+                
+            }
+        }
+    }
+}

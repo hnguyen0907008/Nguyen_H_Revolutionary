@@ -1,0 +1,115 @@
+.home{
+    .hero{
+        @include tablet{
+            height: 350px;
+        }
+
+        @include desktop{
+            height: 400px;
+        }
+
+        background: url('../public/images/home-hero.jpg') center no-repeat;
+        height: 300px;
+        display: flex; flex-direction: column;
+        #text{
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 100px;
+
+            //media queries
+            @include tablet{
+                margin-top: 125px;
+            }
+
+            @include desktop{
+                margin-top: 150px;
+            }
+
+            //styling text
+            p{
+                color: white;
+                font-size: 25px;
+                text-align: center;
+                font-family: $title;
+                margin-bottom: 10px;
+            }
+
+            #blue{
+                color: $light-blue;
+            }
+        }
+    }
+
+    .problem{
+        padding: 25px;
+        h2 {
+            font-size: $title-phone; 
+            margin-bottom: 10px;
+            color: $dark-blue;
+            font-family: $title;
+
+            @include desktop{
+                font-size: $title-desktop;
+            }
+        }
+        .problem-content{
+            display: flex;
+            flex-direction: column;
+            width: 100%; margin: 0 auto;
+            p{
+                margin-top: 10px;
+            }
+
+            //media queries
+            @include tablet{
+                flex-direction: row;
+                p{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+    .available{
+        background-color: $third-blue;
+        padding: 25px 25px 35px;
+        h2{
+            font-size: $title-phone;
+            text-align: center;
+            color: $orange;
+            font-family: $title;
+            @include desktop{
+                font-size: $title-desktop;
+            }
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        //videos
+        article{
+            background-color: chocolate;
+            margin: 0 auto;
+            display: flex; flex-direction: column;
+            .video-wrapper{
+                h3{
+                    text-align: left;
+                    margin-bottom: 3px;
+                    color: white;
+                    font-size: 18px;
+                    font-family: $title;
+                    @include desktop{
+                        font-size: 22px;
+                    }
+                }
+                h4{
+                    text-align: left;
+                    color: $light-blue;
+                    font-family: $sub;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+//Phone Text Size
+$title-phone: 20px;
+
+//Desktop Text Size
+$title-desktop: 25px;
+
+//palette
+$dark-blue: #032472;
+$sec-blue: #0055DD;
+$third-blue: #085B7F;
+$light-blue: #27C7FF;
+$purple: #662D91;
+$orange: #F7931E;
+$red: #ED1C24;
+
+//Font Families
+$title: 'Barlow Bold';
+$sub: 'Barlow Condensed';
+$text: 'Barlow Light';
+$quote: 'Baskerville';
+
+//Fonts
+@font-face {
+    font-family: 'Barlow Bold'; //TITLES
+    src:  url('Barlow-Bold.woff2') format('woff2'),
+          url('Barlow-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow Light'; //PARAGRAPH
+    src:  url('Barlow-Light.woff2') format('woff2'),
+          url('Barlow-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed'; //SUBTITLES
+    src:  url('BarlowCondensed-Medium.woff2') format('woff2'),
+          url('BarlowCondensed-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Baskerville'; //QUOTES
+    src:  url('BaskervilleBT.woff2') format('woff2'),
+          url('BaskervilleBT-Roman.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bebas Neue'; //LOGO
+    src:  url('BebasNeue-Regular.woff2') format('woff2'),
+          url('BebasNeue-Regular.woff') format('woff');
+}
+
+  
