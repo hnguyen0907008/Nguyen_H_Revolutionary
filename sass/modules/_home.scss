@@ -42,6 +42,7 @@
 
     .problem{
         padding: 25px;
+
         h2 {
             font-size: $title-phone; 
             margin-bottom: 10px;
@@ -60,32 +61,57 @@
                 margin-top: 10px;
             }
 
+            img{
+                width: 220px; margin: 0 auto;
+                margin-top: 20px;
+                
+            }
+
             //media queries
             @include tablet{
                 flex-direction: row;
-                p{
-                    margin-left: 30px;
+                img{
+                    margin-right: 20px;
                 }
             }
         }
-    }
+
+        .mission{
+            @include tablet{
+                flex-direction: row-reverse;
+                img{
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        //put Our Mission into the right
+        #right{
+            @include tablet{
+                margin-left: 78%;
+            }
+        }
+    }//end Current problem
 
     .available{
         background-color: $third-blue;
-        padding: 25px 25px 35px;
+        padding: 25px 25px 40px;
         h2{
             font-size: $title-phone;
             text-align: center;
             color: $orange;
             font-family: $title;
+            padding-bottom: 10px;
             @include desktop{
                 font-size: $title-desktop;
             }
         }
-        h3{
+        p{
             text-align: center;
-            margin-bottom: 30px;
+            padding-bottom: 30px;
             color: white;
+            width: 50%;
+            margin: 0 auto;
         }
 
         //videos
@@ -93,6 +119,11 @@
             background-color: chocolate;
             margin: 0 auto;
             display: flex; flex-direction: column;
+
+            @include tablet{
+                flex-direction: row;
+                justify-content: space-between;
+            }
             .video-wrapper{
                 h3{
                     text-align: left;
