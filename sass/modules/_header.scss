@@ -18,12 +18,11 @@ header{
 
     //phone Nav
     #menu{
-        background-color: blue;
-        height: 40px;
-        width: 40px;
-
-        margin-top: 20px;
-        margin-right: 20px;
+        img{
+            height: 40px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
         @include tablet{
             display: none;
         }

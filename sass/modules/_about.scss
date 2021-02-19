@@ -1,6 +1,12 @@
 .about{
     .hero-about{
         height: 170px;
+        h2{
+            font-family: $title;
+            font-size: 25px;
+            color: white; padding-top: 12%;
+            text-align: center;
+        }
 
         @include tablet{
             height: 220px;
@@ -9,28 +15,33 @@
         @include desktop{
             height: 270px;
             h2{
-                padding-top: 60px;
+                //padding-top: 60px;
             }
         }
 
-        background-color: blanchedalmond;
+        background: url('../public/images/about-hero.jpg') center no-repeat;
     }//end hero-about
 
     .history-about{
-        background-color: grey;
+        background: url('../public/images/about-bg.jpg') center no-repeat;
         padding: 20px 0px;
+
+        @include tablet{
+            padding: 40px 0px;
+        }
         color: white;
         .blue-bg{
-            background-color: $third-blue;
+            background: rgba(0, 0, 0, 0.7);
             width: 70%; margin: 0 auto;
             padding: 30px;
             @include roundCorners(15px);
         }
 
         .quote{
-            text-align: center;
             font-family: $quote;
             margin: 10px;
+            font-size: 20px; 
+            color: $light-blue;
         }
     }
 
@@ -124,17 +135,31 @@
 
         .team-activity{
             display: grid;
-            padding: 25px;
+            
+            @include tablet{
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+            }
 
             .activity{
-                background-color: yellowgreen;
                 display: flex; flex-direction: column;
                 margin-bottom: 20px;
+                
+                margin: 0px 20px;
+                padding: 25px;
+                img{
+                    width: 400px; 
+                    margin: 0 auto;
+                }
 
                 h3{
                     color: $dark-blue;
                     font-family: $title;
                     margin-top: 10px;
+                }
+
+                @include tablet{
+                    margin: 0px;
                 }
             }
         }
@@ -171,7 +196,8 @@
             margin-top: 25px;
 
             @include tablet{
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 40px;
             }
 
             #leader-info{

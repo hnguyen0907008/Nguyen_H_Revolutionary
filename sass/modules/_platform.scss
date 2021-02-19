@@ -1,0 +1,86 @@
+.platform{
+    padding-bottom: 40px;
+    .hero-platform{
+        height: 270px;
+        background: url('../public/images/platform-hero.jpg') center no-repeat;
+        display: flex; flex-direction: column;
+        padding-left: 20px; padding-right: 20px;
+        @include tablet{
+            height: 315px;
+            padding-left: 35px; padding-right: 35px;
+        }
+
+        @include desktop{
+            height: 360px;
+            padding-left: 50px; padding-right: 50px;
+        }
+        
+        //styling text
+        #bg{
+            background:rgba(0, 0, 0, 0.7);
+            @include roundCorners(15px);
+            color: white;
+            margin-top: 7%; 
+            padding: 20px;
+            h2{
+                font-family: $title;
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: white;
+                @include desktop{
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+
+    .graph{
+        img{
+            width: 100%;
+        }
+    }
+    
+
+    .process{
+        display: flex; flex-direction: column;
+        padding: 30px 0px;
+        h2{
+            font-family: $title;
+            font-size: 20px;
+            color: $dark-blue;
+            text-align: center;
+        }
+        h3{
+            font-size: 15px; font-family: $sub;
+            text-align: center;
+        }
+        //media queries
+        @include tablet{
+            h2{ font-size: 25px;}
+            h3{ font-size: 18px;}
+        }
+        @include desktop{
+            h2{ font-size: 30px;}
+            h3{ font-size: 20px;}
+        }
+
+        .overview-wrapper{
+            display: flex; flex-direction: column;
+            margin: 0 auto;
+            @include tablet{
+                flex-direction: row; justify-content: space-around;
+            }
+            .overview{
+                display: flex; flex-direction: row;
+                margin-top: 30px;
+                .overview-content{
+                    margin-left: 20px;
+                    h4{
+                        font-family: $title; margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}//end platform
