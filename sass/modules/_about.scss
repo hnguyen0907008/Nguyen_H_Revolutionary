@@ -1,6 +1,6 @@
 .about{
     .hero-about{
-        height: 170px;
+        height: 170px; margin-bottom: 30px;
         h2{
             font-family: $title;
             font-size: 25px;
@@ -46,7 +46,7 @@
     }
 
     .values{
-        
+        margin-bottom: 30px;
         background-color: $purple;
         padding: 25px 0px 40px;
         text-align: center;
@@ -128,8 +128,7 @@
             }
         }
 
-        #team-summary{
-            text-align: center;
+        #team-summary{   
             margin: 30px;
         }
 

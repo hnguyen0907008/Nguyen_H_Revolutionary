@@ -158,6 +158,17 @@
   margin-top: 10px;
 }
 
+.home .problem .problem-content p #quicklink {
+  text-decoration: none;
+  color: #0055DD;
+  font-family: "Barlow Bold";
+  font-size: 20px;
+}
+
+.home .problem .problem-content p #quicklink:hover {
+  color: #662D91;
+}
+
 .home .problem .problem-content img {
   width: 220px;
   margin: 0 auto;
@@ -196,12 +207,17 @@
 
 .home .available {
   background-color: #085B7F;
-  padding: 35px 25px 40px;
+  padding: 30px 30px 50px 30px;
+}
+
+@media (min-width: 768px) {
+  .home .available {
+    padding: 40px 40px 60px 40px;
+  }
 }
 
 .home .available h2 {
   font-size: 20px;
-  text-align: center;
   color: #F7931E;
   font-family: "Barlow Bold";
   padding-bottom: 10px;
@@ -214,11 +230,28 @@
 }
 
 .home .available p {
-  text-align: center;
   padding-bottom: 30px;
   color: white;
-  width: 50%;
   margin: 0 auto;
+}
+
+.home .available .provide #provide-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home .available .provide #provide-point img {
+  background-color: aqua;
+  margin-right: 20px;
+}
+
+.home .available .provide #provide-point p {
+  color: #27C7FF;
 }
 
 .home .available article {
@@ -284,6 +317,7 @@
 
 .about .hero-about {
   height: 170px;
+  margin-bottom: 30px;
   background: url("../public/images/about-hero.jpg") center no-repeat;
 }
 
@@ -335,6 +369,7 @@
 }
 
 .about .values {
+  margin-bottom: 30px;
   background-color: #662D91;
   padding: 25px 0px 40px;
   text-align: center;
@@ -461,7 +496,6 @@
 }
 
 .about .association #team-summary {
-  text-align: center;
   margin: 30px;
 }
 
@@ -721,8 +755,104 @@
   }
 }
 
+.platform #retailers h2 {
+  font-family: "Barlow Bold";
+  font-size: 20px;
+  margin: 20px;
+  color: #032472;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .platform #retailers h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform #retailers h2 {
+    font-size: 30px;
+  }
+}
+
+.platform #retailers img {
+  width: 100%;
+}
+
 .platform .graph img {
   width: 100%;
+}
+
+.platform .qualification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px 10px 30px;
+}
+
+.platform .qualification h2 {
+  font-family: "Barlow Bold";
+  font-size: 20px;
+  color: #032472;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.platform .qualification h3 {
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #0055DD;
+  margin-bottom: 20px;
+}
+
+.platform .qualification #qual-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.platform .qualification #qual-wrapper #qualify #hash {
+  color: #0055DD;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .platform .qualification h2 {
+    font-size: 25px;
+  }
+  .platform .qualification h3 {
+    font-size: 20px;
+  }
+  .platform .qualification #qual-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform .qualification {
+    padding: 30px 0px;
+  }
+  .platform .qualification h2 {
+    font-size: 30px;
+  }
+  .platform .qualification h3 {
+    font-size: 25px;
+  }
+  .platform .qualification #qual-wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 .platform .process {
@@ -733,7 +863,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0px;
+  padding: 30px 30px;
 }
 
 .platform .process h2 {
@@ -759,6 +889,9 @@
 }
 
 @media (min-width: 1024px) {
+  .platform .process {
+    padding: 30px 0px;
+  }
   .platform .process h2 {
     font-size: 30px;
   }
@@ -806,7 +939,7 @@
 
 .platform .process .overview-wrapper .overview .overview-content h4 {
   font-family: "Barlow Bold";
-  margin-bottom: 3px;
+  margin-bottom: 15px;
 }
 
 .contact .hero-contact {

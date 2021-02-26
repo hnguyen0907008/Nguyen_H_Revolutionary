@@ -59,6 +59,15 @@
             width: 100%; margin: 0 auto;
             p{
                 margin-top: 10px;
+                #quicklink{
+                    text-decoration: none;
+                    color: $sec-blue;
+                    font-family: $title;
+                    font-size: $title-phone;
+                }
+                #quicklink:hover{
+                    color: $purple;
+                }
             }
 
             img{
@@ -95,11 +104,13 @@
 
     .available{
         background-color: $third-blue;
-        padding: 35px 25px 40px;
-
+        padding: 30px 30px 50px 30px;
+        @include tablet{
+            padding: 40px 40px 60px 40px;
+        }
         h2{
             font-size: $title-phone;
-            text-align: center;
+            
             color: $orange;
             font-family: $title;
             padding-bottom: 10px;
@@ -108,11 +119,24 @@
             }
         }
         p{
-            text-align: center;
+            
             padding-bottom: 30px;
             color: white;
-            width: 50%;
+            
             margin: 0 auto;
+        }
+
+        .provide{
+            #provide-point{
+                display: flex; flex-direction: row;
+                img{
+                    background-color: aqua;
+                    margin-right: 20px;
+                }
+                p{
+                    color: $light-blue;
+                }
+            }
         }
 
         //videos
