@@ -23,6 +23,64 @@
   src: url("BebasNeue-Regular.woff2") format("woff2"), url("BebasNeue-Regular.woff") format("woff");
 }
 
+#menu {
+  width: 35%;
+}
+
+#menu img {
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 55%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+}
+
+#menu #dropdown {
+  background-color: #27C7FF;
+  -webkit-filter: drop-shadow(5px 5px grey);
+          filter: drop-shadow(5px 5px grey);
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+#menu #dropdown ul {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+#menu #dropdown ul li {
+  margin-bottom: 10px;
+}
+
+#menu #dropdown ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #032472;
+  font-family: "Barlow Bold";
+  font-size: 20px;
+}
+
+#menu #dropdown ul li a:hover {
+  color: #ED1C24;
+}
+
+#menu:hover #dropdown {
+  display: block;
+}
+
 * .hidden {
   display: none;
 }
@@ -71,58 +129,8 @@
   font-family: "Barlow Bold";
 }
 
-.home .hero {
-  background: url("../public/images/home-hero.jpg") center no-repeat;
-  height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .home .hero {
-    height: 350px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home .hero {
-    height: 400px;
-  }
-}
-
-.home .hero #text {
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-@media (min-width: 768px) {
-  .home .hero #text {
-    margin-top: 125px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home .hero #text {
-    margin-top: 150px;
-  }
-}
-
-.home .hero #text p {
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  font-family: "Barlow Bold";
-  margin-bottom: 10px;
-}
-
-.home .hero #text #blue {
-  color: #27C7FF;
+.home .hero img {
+  width: 100%;
 }
 
 .home .problem {
@@ -521,12 +529,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
-  margin: 0px 20px;
   padding: 25px;
 }
 
 .about .association .team-activity .activity img {
-  width: 400px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -534,6 +541,7 @@
   color: #032472;
   font-family: "Barlow Bold";
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -547,6 +555,7 @@
   background-color: black;
   color: white;
   padding: 25px 25px 40px;
+  margin-top: 30px;
 }
 
 .about .leadership h2 {
@@ -599,24 +608,8 @@
   margin: 5px 0px 15px;
 }
 
-.events .hero-events {
-  height: 170px;
-  background-color: beige;
-}
-
-@media (min-width: 768px) {
-  .events .hero-events {
-    height: 220px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .events .hero-events {
-    height: 270px;
-  }
-  .events .hero-events h2 {
-    padding-top: 60px;
-  }
+.events .hero-events img {
+  width: 100%;
 }
 
 .events .seminars {
@@ -637,24 +630,24 @@
   }
 }
 
-.events #flyers {
+.events .seminars #flyers {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  background-color: bisque;
+  width: 100%;
+  background-color: lightblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  grid-row-gap: 40px;
 }
 
-.events #flyers #img {
-  width: 100px;
-  height: 175px;
-  background-color: beige;
+.events .seminars #flyers img {
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  .events #flyers {
+  .events .seminars #flyers {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -685,19 +678,8 @@
   }
 }
 
-.events .common-topics .topic-wrapper {
-  margin: 0 auto;
-  background-color: bisque;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-}
-
-.events .common-topics .topic-wrapper .topic h3 {
-  font-family: "Barlow Condensed";
-  font-size: 18px;
+.events .common-topics img {
+  width: 100%;
 }
 
 .platform {
@@ -913,12 +895,11 @@
 
 @media (min-width: 768px) {
   .platform .process .overview-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
   }
 }
 
@@ -931,6 +912,11 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 30px;
+}
+
+.platform .process .overview-wrapper .overview img {
+  width: 110px;
+  height: 170px;
 }
 
 .platform .process .overview-wrapper .overview .overview-content {
@@ -1099,18 +1085,6 @@ header #logo {
 
 header #logo img {
   height: 40px;
-}
-
-header #menu img {
-  height: 40px;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-@media (min-width: 768px) {
-  header #menu {
-    display: none;
-  }
 }
 
 header #header-nav {

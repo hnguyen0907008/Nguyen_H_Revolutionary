@@ -1,0 +1,44 @@
+#menu{
+    width: 35%;
+
+    img{
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 55%;
+        margin-bottom: 20px;
+    }
+
+    @include tablet{
+        display: none;
+    }
+
+    #dropdown{
+        background-color: $light-blue;
+        filter: drop-shadow(5px 5px grey);
+        z-index: 1; position: relative;
+        display: flex; flex-direction: column;
+        display: none;
+        ul{
+            margin: 0 auto;
+            padding: 50px;
+            li{
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    text-align: center;
+                    color: $dark-blue;
+                    font-family: $title;
+                    font-size: $title-phone;
+                }
+                a:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+#menu:hover{
+    #dropdown{
+        display: block;
+    }
+}
