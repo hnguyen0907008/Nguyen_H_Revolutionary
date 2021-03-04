@@ -1,6 +1,7 @@
 .platform{
     padding-bottom: 40px;
     .hero-platform{
+        box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, .3);
         height: 270px;
         background: url('../public/images/platform-hero.jpg') center no-repeat;
         display: flex; flex-direction: column;

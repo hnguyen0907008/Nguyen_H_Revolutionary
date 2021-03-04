@@ -46,23 +46,19 @@
           filter: drop-shadow(5px 5px grey);
   z-index: 1;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   display: none;
 }
 
 #menu #dropdown ul {
-  margin: 0 auto;
   padding: 50px;
 }
 
 #menu #dropdown ul li {
+  display: block;
   margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #27C7FF;
+  width: 100%;
 }
 
 #menu #dropdown ul li a {
@@ -73,7 +69,11 @@
   font-size: 20px;
 }
 
-#menu #dropdown ul li a:hover {
+#menu #dropdown ul li:hover {
+  border-bottom: 3px solid #ED1C24;
+}
+
+#menu #dropdown ul li:hover a {
   color: #ED1C24;
 }
 
@@ -127,6 +127,11 @@
 * main .notes p #blue {
   color: #27C7FF;
   font-family: "Barlow Bold";
+}
+
+.home .hero {
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 .home .hero img {
@@ -243,23 +248,45 @@
   margin: 0 auto;
 }
 
+.home .available .provide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
 .home .available .provide #provide-point {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.home .available .provide #provide-point img {
-  background-color: aqua;
-  margin-right: 20px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px inset #F7931E;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 .home .available .provide #provide-point p {
-  color: #27C7FF;
+  color: #F7931E;
+}
+
+.home .available .provide #provide-point:hover {
+  border: 3px inset #27C7FF;
+}
+
+.home .available .provide #provide-point:hover p {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .home .available .provide {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .home .available article {
@@ -326,6 +353,8 @@
 .about .hero-about {
   height: 170px;
   margin-bottom: 30px;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
   background: url("../public/images/about-hero.jpg") center no-repeat;
 }
 
@@ -610,6 +639,8 @@
 
 .events .hero-events img {
   width: 100%;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 .events .seminars {
@@ -687,6 +718,8 @@
 }
 
 .platform .hero-platform {
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.3);
   height: 270px;
   background: url("../public/images/platform-hero.jpg") center no-repeat;
   display: -webkit-box;
@@ -931,6 +964,8 @@
 .contact .hero-contact {
   height: 170px;
   text-align: center;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.2);
   background: url("../public/images/contact-hero.jpg") center no-repeat;
 }
 
@@ -1101,6 +1136,7 @@ header #header-nav {
 header #header-nav ul li {
   display: inline;
   margin-left: 30px;
+  padding-bottom: 8px;
 }
 
 header #header-nav ul li a {
@@ -1110,7 +1146,11 @@ header #header-nav ul li a {
   font-size: 20px;
 }
 
-header #header-nav ul li a:hover {
+header #header-nav ul li:hover {
+  border-bottom: 3px solid #ED1C24;
+}
+
+header #header-nav ul li:hover a {
   color: #ED1C24;
 }
 
