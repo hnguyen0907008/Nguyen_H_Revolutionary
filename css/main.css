@@ -171,17 +171,6 @@
   margin-top: 10px;
 }
 
-.home .problem .problem-content p #quicklink {
-  text-decoration: none;
-  color: #0055DD;
-  font-family: "Barlow Bold";
-  font-size: 20px;
-}
-
-.home .problem .problem-content p #quicklink:hover {
-  color: #662D91;
-}
-
 .home .problem .problem-content img {
   width: 220px;
   margin: 0 auto;
@@ -219,7 +208,7 @@
 }
 
 .home .available {
-  background-color: #085B7F;
+  background-color: black;
   padding: 30px 30px 50px 30px;
 }
 
@@ -231,7 +220,7 @@
 
 .home .available h2 {
   font-size: 20px;
-  color: #F7931E;
+  color: #27C7FF;
   font-family: "Barlow Bold";
   padding-bottom: 10px;
 }
@@ -274,12 +263,27 @@
   color: #F7931E;
 }
 
+.home .available .provide #provide-point p #quicklink {
+  text-decoration: none;
+  color: #F7931E;
+  font-family: "Barlow Bold";
+  font-size: 20px;
+}
+
 .home .available .provide #provide-point:hover {
   border: 3px inset #27C7FF;
 }
 
 .home .available .provide #provide-point:hover p {
   color: white;
+}
+
+.home .available .provide #provide-point:hover p #quicklink {
+  color: #27C7FF;
+}
+
+.home .available .provide #provide-point:hover p #quicklink:hover {
+  color: #0055DD;
 }
 
 @media (min-width: 768px) {
@@ -434,6 +438,20 @@
 .about .values h3 {
   color: #27C7FF;
   font-family: "Barlow Condensed";
+}
+
+.about .values #divider {
+  background-color: #27C7FF;
+  width: 1px;
+  height: 200px;
+  margin-top: 75px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about .values #divider {
+    display: block;
+  }
 }
 
 .about .values .value-div {
@@ -631,10 +649,28 @@
           flex-direction: column;
 }
 
+.about .leadership .leaders #leader-info img {
+  width: 180px;
+  margin: 0 auto;
+}
+
 .about .leadership .leaders #leader-info h4 {
-  color: #F7931E;
-  font-family: "Barlow Bold";
-  margin: 5px 0px 15px;
+  color: black;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #F7931E;
+  width: 180px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about .leadership .leaders #leader-info p {
+  width: 180px;
+  margin: 0 auto;
 }
 
 .events .hero-events img {
@@ -659,6 +695,15 @@
   .events .seminars h2 {
     font-size: 25px;
   }
+}
+
+.events .seminars p {
+  margin: 30px 30px 0px 30px;
+}
+
+.events .seminars p #invite {
+  color: #0055DD;
+  font-family: "Barlow Condensed";
 }
 
 .events .seminars #flyers {

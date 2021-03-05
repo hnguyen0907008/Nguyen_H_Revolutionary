@@ -19,6 +19,14 @@
             }
         }
 
+        p{
+            margin: 30px 30px 0px 30px;
+            #invite{
+                color: $sec-blue;
+                font-family: $sub;
+            }
+        }
+
         #flyers{
             display: grid; grid-template-columns: 1fr 1fr;
             width: 100%;
