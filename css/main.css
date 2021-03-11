@@ -1332,4 +1332,32 @@ footer #socialMedia ul li a:hover {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
+
+#confirm {
+  font-family: "Barlow Condensed";
+  padding: 100px;
+  text-align: center;
+  font-size: 2em;
+}
+
+#confirm #home-back {
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+#confirm #contact-back {
+  text-decoration: none;
+  background-color: #032472;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#confirm #contact-back:hover {
+  background-color: #0055DD;
+}
+
+#confirm h1 {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=main.css.map */

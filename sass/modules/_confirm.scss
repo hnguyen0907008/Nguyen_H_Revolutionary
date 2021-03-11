@@ -1,0 +1,27 @@
+#confirm{
+    font-family: $sub;
+    padding: 100px;
+    text-align: center;
+    font-size: 2em;
+
+    #home-back{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    #contact-back{
+        text-decoration: none;
+        background-color: $dark-blue;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    #contact-back:hover{
+        background-color: $sec-blue;
+    }
+
+    h1{
+        margin-bottom: 50px;
+    }
+}
