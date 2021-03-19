@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Revolutionary - Welcome!</title>
 </head>
 <body>
@@ -12,19 +13,29 @@
         <h1 class="hidden">Revolutionary Homepage</h1>
         <header>
             <div id="logo">
-                <img src="public/images/main-logo.svg" alt="Logo">
+                <a href="index.html"><img src="public/images/main-logo.svg" alt="Logo"></a>
             </div>
+
             <div id="menu">
-                <!--burger menu-->
+                <img src="public/images/menu.png" alt="Menu">
+                <div id="dropdown">
+                    <!--appear in phone size-->
+                    <ul>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                        <li><a href="platform.html">PLATFORM</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
 
             <nav id="header-nav">
                 <!--desktop menu-->
                 <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">PLATFORM</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="platform.html">PLATFORM</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
                 </ul>
             </div>
         </header>
@@ -33,42 +44,68 @@
             <h1 class="hidden">Homepage Content</h2>
             <section class="hero">
                 <h2 class="hidden">Hero - Banner</h2>
-                <div id="text">
-                    <p>VISIONARY</p>
-                    <p>MISSIONARY</p>
-                    <p id="blue">REVOLUTIONARY</p>
-                </div>
+                <img src="public/images/home-hero.gif" alt="Hero">
             </section>
 
-            <section class="problem">
+            <section class="problem" data-aos="fade-left">
                 <h2>THE WORLD IS CHANGING</h2>
                 <div class="problem-content">
-                    <img src="#" alt="The World">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi harum eos, a, natus omnis fuga molestiae dicta amet unde ratione dolor sequi nostrum quod possimus! Veritatis vero rerum quasi.</p>
+                    <img src="public/images/world.png" alt="The World">
+                    <p>In this Information Age, thousands of businesses -large and small - have shifted to leverage digital and technology. The great disruptions of today have shifted the needs of individuals globally, each having the potential to create their own destiny. What worked in the 20th century may not necessarily work in today's economy and market, thus demanding a shift in not only the job market but the mindset behind establishing finances.
+                    <br><br>
+                    People have the need to establish businesses for taking control of finance. The challenge is not only doing the right business platform that fulfill their life goals, but also having concrete knowledge and mindset to succeed in their entrepreneurship journey. </p>
                 </div>
             </section>
 
-            <section class="problem">
-                <h2>OUR MISSION</h2>
-                <div class="problem-content">
-                    <img src="#" alt="Mission">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eligendi harum eos, a, natus omnis fuga molestiae dicta amet unde ratione dolor sequi nostrum quod possimus! Veritatis vero rerum quasi.</p>
+            <section class="problem" data-aos="fade-right">
+                <h2 id="right">OUR MISSION</h2>
+                <div class="problem-content mission">
+                    <img src="public/images/mission.png" alt="Mission">
+                    <p>Revolutionary's primary goal is to connect growth mindset individuals to a long term mentorship program geared towards leadership and business development. We provide a flexible online business platform and a mentorship program which guide qualified individuals to pursue a customized lifestyle while developing valuable financial knowledge.
+                    <br><br>
+                    We seek to leverage mentorship to help others improve in areas they wish to grow in and become the best version of themselves through personal and career development.
+                    </p>
                 </div>
             </section>
 
             <section class="available">
-                <h2>WHAT'S AVAILABLE FOR YOU?</h2>
-                <h3>In this Information Age, what are the solutions...?</h3>
+                <h2>WHAT DO WE PROVIDE?</h2>
+                <p>Revolutionary provides qualified individuals a franchise-like e-commerce business, where we can form a long term partnership with multiple companies. There is a formulated selection process to educate others on the partnership specifics and uphold our standards of integrity.</p>
+
+                <section class="provide" data-aos="zoom-in">
+                    <h2 class="hidden">Summary of What we provide</h2>
+                    <div id="provide-point">
+                        <p>The rights to use our e-commerce platform to build your own part-time business that generates your monthly active and passive income.</p>
+                    </div>
+                    <div id="provide-point">
+                        <p>A chance to grow yourself as an individual and as an entrepreneur in all aspects of life: finance, budgeting, leadership, communication, etc...</p>
+                    </div>
+                    <div id="provide-point">
+                        <p>Having access to a mentorship program and receiving one-on-one coaching from well-qualified, successgul mentors who will guide you every step along the way.</p>
+                    </div>
+                    <div id="provide-point">
+                        <p>A chance to build an asset for those who want to diversify your income without interfering your current jobs and studies.</p>
+                    </div>
+                    <div id="provide-point">
+                        <p>A chance to expand your own network and connections - and be profitable doing so!</p>
+                    </div>
+                    <div id="provide-point">
+                        <p>For more information, please go to <br><br>
+                            <a id="quicklink" href="about.html">ABOUT</a><br>
+                            <a id="quicklink" href="platform.html">PLATFORM</a>
+                        </p>
+                    </div>
+                </section>
 
                 <article>
                     <div class="video-wrapper">
-                        <video src="#"></video>
+                        <iframe src="https://www.youtube.com/embed/RP7JNRZ069g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h3>MENTORSHIP</h3>
                         <h4>EDUCATION</h4>
                     </div>
 
                     <div class="video-wrapper">
-                        <video src="#"></video>
+                        <iframe src="https://www.youtube.com/embed/YkJ09ayEUUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <h3>E-COMMERCE</h3>
                         <h4>PLATFORM</h4>
                     </div>
@@ -79,22 +116,28 @@
         <footer>
             <div class="wrapper">
                 <div id="logo">
-                    <img src="public/images/white-logo.svg" alt="Logo">
+                    <a href="index.html"><img src="public/images/white-logo.svg" alt="Logo"></a>
                 </div>
                 <nav id="footerNav">
                     <ul>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">PLATFORM</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                        <li><a href="platform.html">PLATFORM</a></li>
+                        <li><a href="contact.php">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div id="socialMedia">
-                <!--icons here-->
+                <ul>
+                    <li><a href="#"><img src="public/images/facebook.svg" alt="FB"></a></li>
+                    <li><a href="#"><img src="public/images/instagram.svg" alt="INS"></a></li>
+                    <li><a href="#"><img src="public/images/youtube.svg" alt="YT"></a></li>
+                </ul>
             </div>
         </footer>
     </main>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/main.js"></script>
 </html>

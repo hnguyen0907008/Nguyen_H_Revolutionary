@@ -1,0 +1,240 @@
+.about{
+    .hero-about{
+        height: 170px; margin-bottom: 30px;
+        box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, .5);
+        h2{
+            font-family: $title;
+            font-size: 25px;
+            color: white; padding-top: 12%;
+            text-align: center;
+        }
+
+        @include tablet{
+            height: 220px;
+        }
+
+        @include desktop{
+            height: 270px;
+            h2{
+                //padding-top: 60px;
+            }
+        }
+
+        background: url('../public/images/about-hero.jpg') center no-repeat;
+    }//end hero-about
+
+    .history-about{
+        background: url('../public/images/about-bg.jpg') center no-repeat;
+        padding: 20px 0px;
+
+        @include tablet{
+            padding: 40px 0px;
+        }
+        color: white;
+        .blue-bg{
+            background: rgba(0, 0, 0, 0.7);
+            width: 70%; margin: 0 auto;
+            padding: 30px;
+            @include roundCorners(15px);
+        }
+
+        .quote{
+            font-family: $quote;
+            margin: 10px;
+            font-size: 20px; 
+            color: $light-blue;
+        }
+    }
+
+    .values{
+        margin-bottom: 30px;
+        background-color: $purple;
+        padding: 25px 0px 40px;
+        text-align: center;
+        display: flex; flex-direction: column;
+        h2{
+            color: white;
+            font-size: 20px;
+            font-family: $title;
+    
+            @include desktop{
+                font-size: $title-desktop;
+            }
+        }
+        h3{
+            color: $light-blue;
+            font-family: $sub;
+        }
+
+        #divider{
+            background-color: $light-blue;
+            width: 1px; height: 200px;
+            margin-top: 75px;
+            display: none;
+            @include tablet{
+                display: block;
+            }
+        }
+
+        .value-div{
+            display: flex; flex-direction: column;
+            margin: 0 auto;
+
+            @include tablet{
+                flex-direction: row;
+                justify-content: space-around;
+                width: 70%;
+            }
+
+            //contains 2 images
+            .values-grid{
+                display: flex; flex-direction: column;
+                //1 value
+                .value{
+                    margin-top: 20px;
+                    img{
+                        width: 110px;
+                    }
+                    h4{
+                        color: white;
+                        font-family: $sub;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    } 
+    
+    .association{
+        display: flex; flex-direction: column;
+        #team-bg{
+            background: url('../public/images/about-team.jpg') center no-repeat;
+            height: 100px;
+
+            @include tablet{
+                height: 150px;
+            }
+
+            @include desktop{
+                font-size: $title-desktop;
+                height: 200px;
+            }
+
+            h2{
+                text-align: center;
+                color: $orange;
+                font-family: $title;
+                font-size: 20px;
+                padding-top: 35px;
+
+                //media queries
+                @include tablet{
+                    padding-top: 60px;
+                }
+    
+                @include desktop{
+                    font-size: $title-desktop;
+                    padding-top: 90px;
+                }
+            }
+        }
+
+        #team-summary{   
+            margin: 30px;
+        }
+
+        .team-activity{
+            display: grid;
+            
+            @include tablet{
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+            }
+
+            .activity{
+                display: flex; flex-direction: column;
+                margin-bottom: 20px;
+                
+                //margin: 0px 20px;
+                padding: 25px;
+                img{
+                    width: 450px; 
+                    margin: 0 auto;
+                }
+
+                h3{
+                    color: $dark-blue;
+                    font-family: $title;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                @include tablet{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    .leadership{
+        padding: 0px 25px;
+        background-color: black;
+        color: white;
+        padding: 25px 25px 40px;
+        margin-top: 30px;
+
+        h2{
+            color: white;
+            font-family: $title;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h3{
+            font-family: $sub; color: $light-blue;
+            text-align: center;
+        }
+
+        @include desktop{
+            h2{
+                font-size: $title-desktop;
+            }
+        }
+
+        //leader wrapper
+        .leaders{
+            display: grid; 
+            grid-gap: 20px;
+            margin-top: 25px;
+
+            @include tablet{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 40px;
+            }
+
+            #leader-info{
+                display: flex; flex-direction: column;
+
+                img{
+                    width: 180px;
+                    margin: 0 auto;
+                }
+                h4{
+                    color: black;
+                    font-family: $sub;
+                    text-transform: uppercase;
+                    font-size: 1.1em;
+                    text-align: center;
+                    background-color: $orange;
+                    width: 180px; 
+                    margin: 0 auto;
+                    padding: 10px 0px;
+                    margin-top: 20px; margin-bottom: 10px;
+                }
+                p{
+                    width: 180px; margin: 0 auto;
+                }
+            }
+        }
+    }
+}//end about

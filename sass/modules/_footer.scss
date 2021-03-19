@@ -71,11 +71,26 @@ footer{
     }
 
     #socialMedia{
-        background-color: white;
-        height: 30px; width: 300px;
+        height: 30px; 
         margin: 0 auto;
-        display: flex;
-        flex-direction: row;
         margin-top: 20px;
+        
+        ul{
+            width: 150px;
+            display: flex; flex-direction: row;
+            justify-content: space-around;
+            li{
+                display: inline;
+                a{
+                    img{
+                        width: 30px;
+                    }
+                }
+                a:hover{
+                    filter: invert(100%);
+                }
+            }
+
+        }
     }
 }
