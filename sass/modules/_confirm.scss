@@ -1,0 +1,35 @@
+#confirm{
+    font-family: $sub;
+    padding: 100px;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+
+    #home-back{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+    #contact-back{
+        text-decoration: none;
+        background-color: $dark-blue;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    #contact-back:hover{
+        background-color: $sec-blue;
+    }
+
+    h1{
+        margin-bottom: 50px;
+        margin: 0 auto;
+    }
+
+    #email-img{
+        width: 500px;
+        margin: 0 auto;
+    }
+}

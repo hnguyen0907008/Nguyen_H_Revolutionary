@@ -25,5 +25,18 @@
                 
             }
         }
+
+        .notes{
+            border: 3px solid $light-blue;
+            @include roundCorners(15px); 
+            padding: 15px;
+            margin: 0px 20px;
+            p{
+                #blue{
+                    color: $light-blue;
+                    font-family: $title;
+                }
+            }
+        }
     }
 }

@@ -1,8 +1,14 @@
 @import 'modules/_mediaqueries.scss';
 @import 'modules/_vars.scss';
 @import 'modules/_mixins.scss';
+@import 'modules/_menu.scss';
 // main rules go here
 @import 'modules/_default.scss';
 @import 'modules/_home.scss';
+@import 'modules/_about.scss';
+@import 'modules/_events.scss';
+@import 'modules/_platform.scss';
+@import 'modules/_contact.scss';
 @import 'modules/_header.scss';
 @import 'modules/_footer.scss';
+@import 'modules/_confirm.scss';

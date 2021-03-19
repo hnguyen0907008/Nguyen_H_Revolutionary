@@ -1,0 +1,47 @@
+#menu{
+    width: 35%;
+
+    img{
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 55%;
+        margin-bottom: 20px;
+    }
+
+    @include tablet{
+        display: none;
+    }
+
+    #dropdown{
+        background-color: $light-blue;
+        filter: drop-shadow(5px 5px grey);
+        z-index: 1; position: relative;
+        display: none;
+        ul{
+            padding: 50px;
+            li{
+                display: block;
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                border-bottom: 3px solid $light-blue;
+                width: 100%;
+                a{
+                    text-decoration: none;
+                    text-align: center;
+                    color: $dark-blue;
+                    font-family: $title;
+                    font-size: $title-phone;
+                }
+            }
+            li:hover{
+                border-bottom: 3px solid $red;
+                a{ color: $red}
+            }
+        }
+    }
+}
+#menu:hover{
+    #dropdown{
+        display: block;
+    }
+}

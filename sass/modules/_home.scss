@@ -1,47 +1,12 @@
 .home{
     .hero{
-        @include tablet{
-            height: 350px;
-        }
-
-        @include desktop{
-            height: 400px;
-        }
-
-        background: url('../public/images/home-hero.jpg') center no-repeat;
-        height: 300px;
-        display: flex; flex-direction: column;
-        #text{
-            width: 200px;
-            margin: 0 auto;
-            margin-top: 100px;
-
-            //media queries
-            @include tablet{
-                margin-top: 125px;
-            }
-
-            @include desktop{
-                margin-top: 150px;
-            }
-
-            //styling text
-            p{
-                color: white;
-                font-size: 25px;
-                text-align: center;
-                font-family: $title;
-                margin-bottom: 10px;
-            }
-
-            #blue{
-                color: $light-blue;
-            }
-        }
+        img{ width: 100%;}
+        box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, .5);
     }
 
     .problem{
         padding: 25px;
+
         h2 {
             font-size: $title-phone; 
             margin-bottom: 10px;
@@ -60,46 +25,122 @@
                 margin-top: 10px;
             }
 
+            img{
+                width: 220px; margin: 0 auto;
+                margin-top: 20px;
+                
+            }
+
             //media queries
             @include tablet{
                 flex-direction: row;
-                p{
-                    margin-left: 30px;
+                img{
+                    margin-right: 20px;
                 }
             }
         }
-    }
+
+        .mission{
+            @include tablet{
+                flex-direction: row-reverse;
+                img{
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        //put Our Mission into the right
+        #right{
+            @include tablet{
+                margin-left: 78%;
+            }
+        }
+    }//end Current problem
 
     .available{
-        background-color: $third-blue;
-        padding: 25px 25px 35px;
+        background-color: black;
+        padding: 30px 30px 50px 30px;
+        @include tablet{
+            padding: 40px 40px 60px 40px;
+        }
         h2{
             font-size: $title-phone;
-            text-align: center;
-            color: $orange;
+            
+            color: $light-blue;
             font-family: $title;
+            padding-bottom: 10px;
             @include desktop{
                 font-size: $title-desktop;
             }
         }
-        h3{
-            text-align: center;
-            margin-bottom: 30px;
+        p{
+            
+            padding-bottom: 30px;
             color: white;
+            
+            margin: 0 auto;
+        }
+
+        .provide{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            margin-bottom: 40px;
+            #provide-point{
+                display: flex; flex-direction: column;
+                border: 3px inset $orange;
+                @include roundCorners(10px);
+                padding: 30px;
+                p{
+                    color: $orange;
+                    #quicklink{
+                        text-decoration: none;
+                        color: $orange;
+                        font-family: $title;
+                        font-size: $title-phone;
+                    }
+                    
+                }
+            }
+
+            #provide-point:hover{
+                border: 3px inset $light-blue;
+                p{
+                    color: white;
+                    #quicklink{ color: $light-blue;}
+                    #quicklink:hover{ color: $sec-blue;}
+                }
+            }
+
+            @include tablet{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
 
         //videos
         article{
-            background-color: chocolate;
             margin: 0 auto;
             display: flex; flex-direction: column;
+
+            @include tablet{
+                flex-direction: row;
+                justify-content: space-between;
+            }
             .video-wrapper{
+                display: flex; flex-direction: column;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                iframe{
+                    width: 445px;
+                    height: 210px;
+                }
                 h3{
                     text-align: left;
                     margin-bottom: 3px;
                     color: white;
                     font-size: 18px;
                     font-family: $title;
+                    margin-top: 10px;
                     @include desktop{
                         font-size: 22px;
                     }
